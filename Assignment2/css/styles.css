@@ -15,8 +15,7 @@
   background: salmon;
   height: 15vh;
   padding: 35px 0;
-  font-family: "Ubuntu", sans-serif;
-  transition: color 0.2s ease;
+  /* transition: color 0.2s ease; */
   margin-top: -10px;
 }
 
@@ -60,7 +59,7 @@
 }
 
 /* .bar .menu li a:hover {
-  color: white;
+  color: crimson;
 } */
 
 /* .AttachOnMouseOverText {
@@ -101,7 +100,7 @@
   margin-top: 230px;
 }
 
-img {
+.home img {
   height: 300px;
   max-width: 100%;
   border-radius: 15%;
@@ -151,11 +150,11 @@ img {
 
 /* responsive media query */
 
-@media screen and (max-width: 960px) {
+/* @media screen and (max-width: 800px) {
   .max-width {
-    /* max-width: 1200px; */
+    max-width: 1200px;
     padding: 0 50px;
-    /* margin: auto; */
+    margin: auto;
   }
 
   .bar .menu {
@@ -183,7 +182,7 @@ img {
     margin: 20px 0;
     font-size: 20px;
   }
-}
+} */
 
 /* home section styles -- CONTACTPAGE */
 
@@ -215,7 +214,8 @@ img {
 
 .contact .logos {
   position: absolute;
-  top: 200px;
+  top: 400px;
+  left: 450px;
   align-items: center;
   justify-content: space-around;
   /* display: flex; */
@@ -243,7 +243,7 @@ img {
 
 /* skills page styling */
 
-.skills {
+.skills-page {
   display: flex;
   background: url("../img/back.png") no-repeat center;
   height: 100vh;
@@ -253,7 +253,7 @@ img {
   overflow: scroll;
 }
 
-.skills .head1 {
+.skills-page .head1 {
   font-size: 40px;
   color: crimson;
   font-family: "Caveat", sans-serif;
@@ -262,7 +262,7 @@ img {
   margin-left: 0px;
 }
 
-.skills .head2 {
+.skills-page .head2 {
   font-size: 40px;
   color: crimson;
   font-family: "Caveat", sans-serif;
@@ -271,7 +271,7 @@ img {
   margin-left: 0px;
 }
 
-.skills .max-width {
+.skills-page .max-width {
   margin: 0;
   padding: auto 0 auto 80px;
   margin-top: 230px;
@@ -279,48 +279,36 @@ img {
   font-weight: 300;
 }
 
-.skills .text-skills {
+.skills-page .text-skills {
   font-size: 25px;
   color: white;
   font-family: "Poppins", sans-serif;
   left: 230px;
 }
 
-.skills .text-skills a {
+.skills-page .text-skills a {
   color: salmon;
   font-family: "Satisfy", sans-serif;
   font-size: 30px;
 }
-.skills .text-skills a:hover {
+.skills-page .text-skills a:hover {
   color: blue;
 }
 
-.skills .text-skills2 {
+.skills-page .text-skills2 {
   font-size: 25px;
   color: white;
   font-family: "Poppins", sans-serif;
   left: 230px;
 }
 
-.skills .text-skills2 a {
+.skills-page .text-skills2 a {
   color: salmon;
   font-family: "Satisfy", sans-serif;
   font-size: 30px;
 }
-.skills .text-skills2 a:hover {
+.skills-page .text-skills2 a:hover {
   color: blue;
-}
-
-/* assignment page styling */
-
-.assignment {
-  display: flex;
-  background: url("../img/back.png") no-repeat center;
-  height: 100vh;
-  color: white;
-  min-height: 500px;
-  margin: 0;
-  overflow: scroll;
 }
 
 /* Gallery page styling */
@@ -333,4 +321,119 @@ img {
   min-height: 500px;
   margin: 0;
   overflow: scroll;
+}
+
+.gallery .slideshow {
+  margin-left: 150px;
+  margin-top: 50px;
+  height: 50vh;
+  width: auto;
+  border-radius: 10%;
+  /* position: relative; */
+}
+
+.gallery .max-width {
+  margin: 0;
+  padding: auto 0 auto 80px;
+  margin-top: 80px;
+  margin-left: 350px;
+}
+
+.gallery .heading1 {
+  font-size: 75px;
+  margin-left: 150px;
+  /* position: relative; */
+  font-family: "Caveat", sans-serif;
+  font-weight: 800;
+  margin-top: 50px;
+  color: crimson;
+}
+
+.gallery .heading2 {
+  font-size: 75px;
+  margin-left: 150px;
+  /* position: relative; */
+  font-family: "Caveat", sans-serif;
+  font-weight: 800;
+  margin-top: 100px;
+  color: crimson;
+}
+
+.gallery .dhoni {
+  margin-top: 80px;
+  width: 30vw;
+  height: 50vh;
+  margin-left: 100px;
+  border-radius: 5%;
+}
+
+.gallery .manoj {
+  margin-top: 80px;
+  width: 30vw;
+  height: 50vh;
+  margin-left: 100px;
+  border-radius: 5%;
+}
+
+.gallery .elon {
+  margin-top: 80px;
+  width: 30vw;
+  height: 50vh;
+  margin-left: 100px;
+  border-radius: 5%;
+}
+
+/* ASSIGNMENT PAGE STYLING */
+
+.assignment {
+  display: flex;
+  background: url("../img/back.png") no-repeat center;
+  height: 100vh;
+  color: white;
+  min-height: 500px;
+  margin: 0;
+  overflow: scroll;
+}
+
+.assignment .max-width {
+  margin: 0;
+  padding: auto 0 auto 80px;
+  margin-top: 80px;
+  margin-left: 50px;
+}
+
+#skills {
+  margin-top: 8%;
+  margin-left: 0;
+  margin-right: 100px;
+  font-family: "Ubuntu", sans-serif;
+  border-collapse: collapse;
+  font-size: 25px;
+}
+
+#skills td,
+#skills th {
+  border: 1px solid black;
+  padding: 20px 125px 20px 125px;
+  width: 20px;
+}
+
+#skills tr:nth-child(even) {
+  background-color:salmon;
+  color: #000;
+}
+
+#skills tr:nth-child(odd) {
+  background-color:darkgray;
+  color: #000;
+}
+
+#skills tr:nth-child(even):hover {
+  background-color:crimson;
+  color: #fff;
+}
+
+#skills tr:nth-child(odd):hover {
+  background-color:darkblue;
+  color: #fff;
 }
