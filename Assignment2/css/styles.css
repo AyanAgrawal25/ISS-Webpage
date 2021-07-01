@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Dancing+Script:wght@500&family=Poppins:ital,wght@0,200;1,400;1,600&family=Roboto+Slab:wght@300;400&family=Satisfy&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* navigation bar */
+
+.bar {
+  position: fixed;
+  width: 99%;
+  background: salmon;
+  height: 15vh;
+  padding: 35px 0;
+  font-family: "Ubuntu", sans-serif;
+  transition: color 0.2s ease;
+  margin-top: -10px;
+}
+
+.max-width {
+  max-width: 1200px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+.bar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bar .logo a {
+  color: white;
+  font-size: 40px;
+  font-weight: 800;
+  margin-left: -120px;
+  font-family: "Poppins", sans-serif;
+}
+
+.bar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+.bar .menu li a {
+  font-size: 25px;
+  font-weight: 800;
+  margin-left: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  color: white;
+}
+
+.bar.sticky {
+  padding: 5px 20px;
+  background: rgb(170, 151, 151);
+}
+
+/* .bar .menu li a:hover {
+  color: white;
+} */
+
+/* .AttachOnMouseOverText {
+  text-decoration: white;
+}
+
+.AttachOnMouseOutText {
+  text-decoration: crimson;
+} */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.content {
+  padding: 16px;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/* home section styles -- HOMEPAGE */
+
+.home {
+  display: flex;
+  background: url("../img/back.png") no-repeat center;
+  height: 100vh;
+  color: white;
+  min-height: 500px;
+  overflow: scroll;
+}
+
+.home .max-width {
+  margin: 0;
+  padding: auto 0 auto 80px;
+  margin-top: 230px;
+}
+
+img {
+  height: 300px;
+  max-width: 100%;
+  border-radius: 15%;
+  margin-left: 60px;
+  margin-top: 250px;
+  padding: 0 50px;
+}
+
+.home .home-content .text-1 {
+  font-size: 30px;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+.home .home-content .text-2 {
+  font-size: 80px;
+  font-weight: 550;
+  margin-left: -3px;
+  font-family: "Caveat", sans-serif;
+  color: salmon;
+}
+
+.home .home-content .text-3 {
+  font-size: 30px;
+  margin-left: 5px 0;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+.home .home-content .text-3 span {
+  font-weight: 550;
+  font-size: 33px;
+  color: crimson;
+  font-family: "Dancing Script", sans-serif;
+}
+
+.home .home-content .text-4 {
+  font-size: 30px;
+  margin-left: 5px 0;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+.home .home-content .text-4 span {
+  font-weight: 550;
+  font-size: 40px;
+  color: crimson;
+  font-family: "Dancing Script", sans-serif;
+}
+
+/* responsive media query */
+
+@media screen and (max-width: 960px) {
+  .max-width {
+    /* max-width: 1200px; */
+    padding: 0 50px;
+    /* margin: auto; */
+  }
+
+  .bar .menu {
+    position: fixed;
+    background: black;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    text-align: center;
+    top: 0;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+  }
+
+  .bar .menu .li {
+    display: block;
+  }
+
+  .bar .menu .active {
+    left: 0;
+  }
+
+  .bar .menu .li .a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 20px;
+  }
+}
+
+/* home section styles -- CONTACTPAGE */
+
+.contact {
+  display: flex;
+  background: url("../img/back.png") no-repeat center;
+  height: 100vh;
+  color: white;
+  min-height: 500px;
+  margin: 0;
+  overflow: scroll;
+}
+
+.contact .check {
+  margin-left: 8px;
+  /* margin-right: 8px; */
+  /* text-align: center; */
+}
+
+.contact .contact_heading {
+  font-size: 45px;
+  color: crimson;
+  font-family: "Caveat", sans-serif;
+  position: absolute;
+  top: 250px;
+  left: 500px;
+  /* align-content: center; */
+}
+
+.contact .logos {
+  position: absolute;
+  top: 200px;
+  align-items: center;
+  justify-content: space-around;
+  /* display: flex; */
+  /* flex-direction: right;
+  flex-wrap: wrap; */
+  /* justify-content: center; */
+  /* align-content: center; */
+  display: inline-block;
+}
+
+.contact .logos a {
+  padding: 10px;
+  margin: 20px;
+  display: inline-block;
+}
+
+.contact .logos img {
+  max-height: 100%;
+  height: 80px;
+  width: auto;
+  border-radius: 50%;
+  border-image-width: 20px;
+  border-color: rgba(200, 200, 200, 1);
+}
+
+/* skills page styling */
+
+.skills {
+  display: flex;
+  background: url("../img/back.png") no-repeat center;
+  height: 100vh;
+  color: white;
+  min-height: 500px;
+  margin: 0;
+  overflow: scroll;
+}
+
+.skills .head1 {
+  font-size: 40px;
+  color: crimson;
+  font-family: "Caveat", sans-serif;
+  position: relative;
+  margin-top: -50px;
+  margin-left: 0px;
+}
+
+.skills .head2 {
+  font-size: 40px;
+  color: crimson;
+  font-family: "Caveat", sans-serif;
+  position: relative;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+.skills .max-width {
+  margin: 0;
+  padding: auto 0 auto 80px;
+  margin-top: 230px;
+  margin-left: 165px;
+  font-weight: 300;
+}
+
+.skills .text-skills {
+  font-size: 25px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  left: 230px;
+}
+
+.skills .text-skills a {
+  color: salmon;
+  font-family: "Satisfy", sans-serif;
+  font-size: 30px;
+}
+.skills .text-skills a:hover {
+  color: blue;
+}
+
+.skills .text-skills2 {
+  font-size: 25px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  left: 230px;
+}
+
+.skills .text-skills2 a {
+  color: salmon;
+  font-family: "Satisfy", sans-serif;
+  font-size: 30px;
+}
+.skills .text-skills2 a:hover {
+  color: blue;
+}
+
+/* assignment page styling */
+
+.assignment {
+  display: flex;
+  background: url("../img/back.png") no-repeat center;
+  height: 100vh;
+  color: white;
+  min-height: 500px;
+  margin: 0;
+  overflow: scroll;
+}
+
+/* Gallery page styling */
+
+.gallery {
+  display: flex;
+  background: url("../img/back.png") no-repeat center;
+  height: 100vh;
+  color: white;
+  min-height: 500px;
+  margin: 0;
+  overflow: scroll;
+}
